@@ -430,7 +430,7 @@ figcaption {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain;
   background:
     radial-gradient(circle at 28% 30%, rgba(255, 255, 255, 0.82), transparent 32%),
     linear-gradient(135deg, #ffd7e1, #fff3df);

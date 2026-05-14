@@ -6,6 +6,7 @@ const loveButton = document.querySelector("#loveButton");
 const loveReply = document.querySelector("#loveReply");
 const birthdaySong = document.querySelector("#birthdaySong");
 const musicButton = document.querySelector("#musicButton");
+const greetingVideo = document.querySelector("#video-ucapan video");
 
 function updateMusicButton() {
   musicButton.textContent = birthdaySong.paused ? "♪" : "Ⅱ";
@@ -46,6 +47,17 @@ musicButton.addEventListener("click", () => {
 birthdaySong.addEventListener("play", updateMusicButton);
 birthdaySong.addEventListener("pause", updateMusicButton);
 updateMusicButton();
+
+if (greetingVideo) {
+  greetingVideo.muted = false;
+  greetingVideo.volume = 1;
+
+  greetingVideo.addEventListener("play", () => {
+    birthdaySong.pause();
+    greetingVideo.muted = false;
+    greetingVideo.volume = 1;
+  });
+}
 
 function createFallingHeart() {
   const heart = document.createElement("span");
