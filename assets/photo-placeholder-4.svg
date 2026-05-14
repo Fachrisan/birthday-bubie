@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 525">
+  <rect width="700" height="525" fill="#ffeaf0"/>
+  <rect x="80" y="80" width="540" height="365" rx="22" fill="#fffaf2" stroke="#f7b8c9" stroke-width="10"/>
+  <circle cx="240" cy="210" r="62" fill="#f59ab0"/>
+  <circle cx="460" cy="210" r="62" fill="#f7c7a6"/>
+  <text x="350" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#d94b5f">Foto 4</text>
+  <text x="350" y="383" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#8a5d64">ganti foto di sini</text>
+</svg>

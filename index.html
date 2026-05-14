@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Bubie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="falling-hearts" aria-hidden="true"></div>
+    <audio id="birthdaySong" preload="auto" loop>
+      <!-- taruh lagu di folder assets dengan nama lagu.mp3, atau ubah src di bawah ini -->
+      <source src="assets/lagu.mp3" type="audio/mpeg" />
+      Browser kamu belum mendukung pemutar audio.
+    </audio>
+    <button class="music-button" id="musicButton" type="button" aria-label="Putar atau jeda lagu">♪</button>
+
+    <section class="intro-screen" id="intro">
+      <div class="intro-card">
+        <p class="tiny-note">Ada sesuatu buat kamu...</p>
+        <button class="envelope-button" id="openLetter" type="button" aria-label="Buka surat ulang tahun">
+          <span class="envelope">
+            <span class="envelope-back"></span>
+            <span class="letter-peek">
+              <span>For Bubie</span>
+            </span>
+            <span class="envelope-flap"></span>
+            <span class="envelope-front"></span>
+            <span class="seal">♡</span>
+          </span>
+        </button>
+        <button class="primary-button" id="openLetterText" type="button">Buka suratnya</button>
+      </div>
+    </section>
+
+    <main class="site-content" id="content" aria-live="polite">
+      <section class="hero section-band">
+        <div class="section-inner hero-inner">
+          <p class="script-label">Surat kecil buat orang favoritku</p>
+          <h1>Happy Birthday, Bubie</h1>
+          <p class="lead">Selamat ulang tahun yaa semoga kamu panjanhg umur dan makin cantikk</p>
+        </div>
+      </section>
+
+      <section class="section-band back-time" id="back-in-time">
+        <div class="section-inner two-column">
+          <div>
+            <p class="section-kicker">Back in Time</p>
+            <h2>KAMU TAU GAA</h2>
+            <p>Kalau inget awal-awal, lucu juga ya. Dari yang cuma mabar Roblox, bercanda, terus lama-lama jadi sering ngobrol dan makin deket.</p>
+            <p>Mungkin awalnya sederhana banget, cuma main bareng. Tapi dari situ aku mulai nyaman, mulai seneng kalau ada kamu, dan akhirnya kamu jadi orang yang spesial buat aku.</p>
+          </div>
+
+          <figure class="roblox-frame">
+            <!-- ganti foto di sini: ubah src ke foto/screenshot Roblox kamu -->
+            <img src="assets/roblox-placeholder.jpg" alt="Placeholder screenshot Roblox" />
+            <figcaption>Screenshot Roblox favorit kalian</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-band moments" id="moments">
+        <div class="section-inner">
+          <p class="section-kicker">Best Moments</p>
+          <h2></h2>
+          <div class="polaroid-grid">
+            <figure class="polaroid rotate-left">
+              <!-- ganti foto di sini -->
+              <img src="assets/photo-placeholder-1.jpg" alt="Placeholder foto 1" />
+            </figure>
+            <figure class="polaroid rotate-right">
+              <!-- ganti foto di sini -->
+              <img src="assets/photo-placeholder-2.jpg" alt="Placeholder foto 2" />
+              <figcaption>Senyum kamu favorit aku.</figcaption>
+            </figure>
+            <figure class="polaroid">
+              <!-- ganti foto di sini -->
+              <img src="assets/photo-placeholder-3.jpg" alt="Placeholder foto 3" />
+              <figcaption>Sesederhana ini, tapi bikin bahagia.</figcaption>
+            </figure>
+            <figure class="polaroid rotate-left small-tilt">
+              <!-- ganti foto di sini -->
+              <img src="assets/photo-placeholder-4.jpg" alt="Placeholder foto 4" />
+              <figcaption>Yang bikin momennya spesial itu kamu.</figcaption>
+            </figure>
+            <figure class="polaroid rotate-right small-tilt">
+              <!-- ganti foto di sini -->
+              <img src="assets/photo-placeholder-5.jpg" alt="Placeholder foto 5" />
+              <figcaption>Momen kecil, tapi aku inget.</figcaption>
+            </figure>
+            <figure class="polaroid">
+              <!-- ganti foto di sini -->
+              <img src="assets/photo-placeholder-6.jpg" alt="Placeholder foto 6" />
+              <figcaption>Senyum kamu favorit aku.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band special" id="special">
+        <div class="section-inner soft-panel">
+          <p class="section-kicker">What Makes You Special</p>
+          <h2>kamu ituu rumah favorit akuu</h2>
+          <p>Yang bikin kamu spesial itu bukan cuma dari senyum kamu, tapi dari cara kamu bikin aku nyaman tanpa harus banyak usaha.</p>
+          <p>Aku suka cara kamu jadi diri sendiri. Kadang random, kadang lucu, kadang ngeselin dikit, tapi justru itu yang bikin aku makin sayang.</p>
+        </div>
+      </section>
+
+      <section class="section-band video-section" id="video-ucapan">
+        <div class="section-inner video-inner">
+          <div class="video-copy">
+            <p class="section-kicker">Video Ucapan</p>
+            <h2>Ada video kecil yang nanti cuma buat kamu.</h2>
+            <p>Nanti video ucapan selamat ulang tahunnya bisa ditaruh di sini, biar Bubie bisa nonton langsung dari halaman ini.</p>
+          </div>
+
+          <div class="video-frame">
+            <!-- taruh video di folder assets dengan nama video-ucapan.mp4, atau ubah src di bawah ini -->
+            <video controls preload="metadata">
+              <source src="assets/video-ucapan.mp4" type="video/mp4" />
+              Browser kamu belum mendukung pemutar video.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band message-section" id="message">
+        <div class="section-inner">
+          <article class="letter-paper">
+            <p class="section-kicker">Special Message</p>
+            <h2>Surat ulang tahun buat bubie</h2>
+            <p>Selamat ulang tahun, bubie.</p>
+            <p>Semogaa di umur kamu yang sekarang ini, kamu bisa jadi orang yang lebih baik lagi yaa. Semoga semua hal yang kamu mau, semua yang kamu impikan, dan semua yang lagi kamu usahakan pelan-pelan bisa tercapai satu per satu.</p>
+            <p>
+              Di hari yang spesial ini, aku berharap kamu selalu dikasih kesehatan, kebahagiaan, dan hati yang kuat buat jalanin semuanya. Semoga kamu sehat-sehat terus, nggak gampang capek, nggak gampang sedih, dan selalu dikelilingi sama
+              orang-orang yang sayang sama kamu.
+            </p>
+            <p>
+              Semoga rezeki kamu juga makin lancar, makin banyak hal baik yang datang ke hidup kamu, dan semoga kamu makin kaya juga hehe. Pokoknya aku doain yang terbaik buat kamu, karena kamu pantas dapetin banyak hal baik di hidup kamu.
+            </p>
+            <p>Makasih yaa udah hadir di hidup aku. Makasih udah jadi orang yang bikin aku nyaman, seneng, dan sering senyum sendiri. Aku seneng banget bisa kenal kamu, bisa deket sama kamu, dan bisa punya banyak cerita sama kamu.</p>
+            <p>Selamat ulang tahun yaa, bubie. Aku sayang kamu.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band closing" id="cheers">
+        <div class="section-inner closing-inner">
+          <p class="section-kicker">Cheers to You</p>
+          <h2>Hari ini semua yang manis-manis buat kamu.</h2>
+          <p>Hari ini tentang kamu, bubie. Tapi aku juga seneng karena bisa jadi salah satu orang yang ikut ngerayain hari spesial kamu.</p>
+          <p>Semoga hari ini seindah senyum kamu. Happy birthday yaa, bubie. Aku sayang kamu.</p>
+          <button class="love-button" id="loveButton" type="button">Klik kalau kamu sayang aku juga</button>
+          <p class="love-reply" id="loveReply" role="status">Aku sayang kamu lebih banyak.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

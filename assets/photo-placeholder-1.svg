@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 525">
+  <rect width="700" height="525" fill="#fff0d8"/>
+  <circle cx="180" cy="170" r="90" fill="#f7b8c9"/>
+  <path d="M0 405 C125 355 220 430 350 382 C480 334 575 372 700 320 L700 525 L0 525 Z" fill="#e8647f" opacity=".55"/>
+  <text x="350" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#d94b5f">Foto 1</text>
+  <text x="350" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#8a5d64">ganti foto di sini</text>
+</svg>
